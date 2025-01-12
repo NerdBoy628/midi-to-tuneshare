@@ -12,8 +12,15 @@ disabled_tracks = []
 inst_table = "00001144ffgfiif42227997734543444544544kk7777765h77dbebd7888a87jkaaaa88d9dbdcccddkjcb4cbkgdkcd49bfdf3edd44464fa79f6hllllllcll9llll"
 drum_table = [18,24,25,25,18,17,20,21,11,11,12,10,17,10,23,15,23,24,23,13,22,22,13,22,14,13,13,16,14,19,13,26,14,20,20,17,22,23,10,10,27,27,15,15,16,16,25,25,18,20,22,27,27,16,21,24,14,16,17,11,11]
 
-from mido import MidiFile, second2tick
-import os, pyperclip
+import os
+try:
+    from mido import MidiFile, second2tick
+    import pyperclip
+except:
+    os.system('pip3 install mido')
+    os.system('pip3 install pyperclip')
+    from mido import MidiFile, second2tick
+    import pyperclip
 os.system('clear')
 
 def sec2tick(x):
