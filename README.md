@@ -24,8 +24,10 @@ This program will convert MIDI files to TuneShare codes that can be played on Sc
 	This usually means there's too many notes. Try a shorter song, or open the file in a MIDI editor like [signal](signal.vercel.app) and see if you can disable or remove any tracks.
 3. Is the speed/tempo not right?\
 	Just change it in the song editor (Settings > Tempo)
+4. Is something else weird going on?\
+	Please tell me any feedback, questions, or bug reports by commenting on this Scratch project: [https://scratch.mit.edu/projects/870613190/](https://scratch.mit.edu/projects/870613190/)
 
 ### What is TuneShare?
 
-Ok why are you here if you don't know what TuneShare is\
+Ok if you don't know what TuneShare is why are you here\
 But anyway it's an online song maker created by [CodeGio](https://scratch.mit.edu/users/codeGIO/), where you can create and share songs online, add them to playlists, and more. It was created in Scratch, a kids programming language. The link is [https://scratch.mit.edu/projects/863714854](https://scratch.mit.edu/projects/863714854)
