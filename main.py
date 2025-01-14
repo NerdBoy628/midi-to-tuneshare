@@ -44,7 +44,7 @@ for msg in mid:
     clock += sec2tick(msg.time)*firstbpm/bpm
     if msg.type == 'program_change':
         channels[msg.channel] = 128 if msg.channel == 9 else msg.program
-    elif msg.type == 'note_on' and 10 <= msg.note <= 99 and msg.velocity > 0 and msg.channel not in disabled_tracks:
+    elif msg.type == 'note_on' and 24 <= msg.note <= 113 and msg.velocity > 0 and msg.channel not in disabled_tracks:
             data.append([msg.note-14,channels[msg.channel],1,msg.velocity*volumes[msg.channel]/127,clock])
             note_on_times[(msg.channel, msg.note)] = [clock,len(data)]
     elif msg.type == 'note_off' or (msg.type == 'note_on' and msg.velocity == 0):
